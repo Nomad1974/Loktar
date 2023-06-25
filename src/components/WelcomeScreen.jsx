@@ -25,8 +25,7 @@ const WelcomeScreen = ({className}) => {
 }
 
 export default styled(WelcomeScreen)`
-    position: relative;
-    margin: ${setRem(-20)} ${setRem(1047)} 0 ${setRem(350)};
+    margin: ${setRem(-20)} ${setRem(986)} 0 ${setRem(428)};
     width: ${setRem(346)};
     height: ${setRem(177)};
     .icon {

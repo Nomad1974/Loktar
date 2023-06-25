@@ -9,7 +9,9 @@ const MenuLeft = ({className}) => {
                 <ul>
                     <li><a name="top" href="#top">меню</a></li>
                     <li>
-                        <UnionLeft className="icon"/>
+                        <span>
+                            <UnionLeft className="icon"/>
+                        </span>
                     </li>
                     <li><a href={<Menu />}>функции</a></li>
                     <li><a href="#price">тарифы</a></li>
@@ -21,8 +23,9 @@ const MenuLeft = ({className}) => {
 }
 
 export default styled(MenuLeft)`
-    width: ${setRem(367)};
+    max-width: ${setRem(367)};
     height: ${setRem(194)};
+    padding: ${setRem(1)} ${setRem(1)};
     ${setFont.over};
     font-size: ${setRem(16)};
     line-height: ${setRem(19.2)};
@@ -45,5 +48,9 @@ export default styled(MenuLeft)`
     a {
         text-decoration:none;
         color: ${setColor.mainColor};
+    }
+    span {
+        width: ${setRem(366)};
+        height: ${setRem(20)};
     }
 `;

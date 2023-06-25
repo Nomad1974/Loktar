@@ -6,20 +6,24 @@ import { setColor, setFont, setRem } from "../style/style";
 const Header = ({className, text, margin}) => {
     return (
         <div className={className}>
-            <h1>{text}</h1>
+            <span>{text}</span>
         </div>
     )
 }
 
 export default styled(Header)`
-    width: ${setRem(1230)};
-    height: ${setRem(120)};
+    width: ${setRem(1100)};
+    height: ${setRem(197)};
     color: ${setColor.mainWhite};
     ${setFont.cyber};
-    font-size: ${setRem(130)};
+    font-size: ${setRem(190)};
     text-align: center;
     text-transform: uppercase;
     margin-top: ${props => props.margin};
     margin-left: auto;
     margin-right: auto;
+    span {
+        width: 100%;
+        height: 100%;
+    }
 `;

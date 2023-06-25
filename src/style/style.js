@@ -27,7 +27,7 @@ export const setFlex = ({ x = "center", y = "center" } = {}) => {
 };
 
 export const setBorder = ({
-    width = "2px",
+    width = "1px",
     style = "solid",
     color = "#11E5B3"
 } = {}) => {

@@ -9,7 +9,9 @@ const MenuRight = ({className}) => {
             <ul>
                 <li className="link">вход</li>
                 <li>
-                    <UnionRight />
+                    <span>
+                        <UnionRight />
+                    </span>
                 </li>
                 <li className="link">начать</li>
                 <li className="link">начать через елама</li>
@@ -19,7 +21,7 @@ const MenuRight = ({className}) => {
 }
 
 export default styled(MenuRight)`
-    width: ${setRem(371)};
+    max-width: ${setRem(371)};
     height: ${setRem(190)};
     ${setFont.over};
     font-size: ${setRem(16)};
@@ -39,5 +41,9 @@ export default styled(MenuRight)`
     }
     .link {
         cursor: pointer;
+    }
+    span {
+        width: ${setRem(366)};
+        height: ${setRem(20)};
     }
 `;
