@@ -28,7 +28,7 @@ const FirstScreen = ({className}) => {
                     </div>
                 </SubTitle>
             <Title title={"старт"}/>
-            <Button width={setRem(261)} height={setRem(54)}/>
+            <Button width={setRem(261)} height={setRem(60)}/>
             </Container>
         </section>
     );
